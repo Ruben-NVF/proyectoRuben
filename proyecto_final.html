@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa y moda urbana</title>
+    <style>
+        body {
+            font-family: 'Engravers MT', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/236x/79/63/ff/7963ffc2c44016ce620a7b9f3aac8c3d.jpg');
+            background-size: cover;
+            backdrop-filter: blur(5px);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: rgba(38, 38, 39, 0.349);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 10px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #333;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-between;
+            width: 150px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: auto;
+        }
+
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin: 20px auto;
+            border-radius: 20px;
+            border: 5px solid #333;
+            width: 100%; 
+            background-image: url('https://i.pinimg.com/236x/79/63/9c/79639ca69f5f5c2553024d2a744f001a.jpg');
+            backdrop-filter: blur(10px);
+            background-size: contain;
+            background-position: center;
+            
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slide 10s infinite;
+        }
+
+        .slide {
+            width: 33.33%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-33.33%); }
+            66% { transform: translateX(-66.66%); }
+            100% { transform: translateX(0); }
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            color: #e6e0c4;
+            animation: move 10s infinite linear;
+            text-align: center;
+            margin: 0;
+        }
+
+        @keyframes move {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        section {
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            margin: 20px;
+            box-shadow: 0 10px 20px rgba(228, 222, 147, 0.2);
+            background-image: url('https://i.pinimg.com/564x/bb/c5/a7/bbc5a79c281845f2b9a72a8968127bd4.jpg');
+            background-size: cover;
+            background-position: center; 
+        }
+
+        .contenedor-cuadro-principal {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+
+        .contenedor-cuadro {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cuadro {
+            width: 48%;
+            padding: 5px 10px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            color: rgb(252, 251, 242);
+            font-size: 1.8em;
+            background-size: cover;
+            background-position: center; 
+            background-color: rgba(255, 255, 255, 0);
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 15px;
+        }
+
+        .back-to-menu {
+            display: block;
+            margin-top: 20px;
+            background-color: #00000000;
+            color: white;
+            padding: 3px 3px; 
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            width: auto;
+            align-self: flex-end;
+            font-size: 0.8em; /
+        }
+
+        .back-to-menu:hover {
+            background-color: #6bb1d1e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            position: relative;
+        }
+
+        .footer-social-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .footer-social-icons img {
+            width: 30px;
+            height: auto;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#seccion1">Moda urbana</a>
+        <a href="#seccion2">Pagina de moda</a>
+        <a href="#seccion3">Calculadora personalizada</a>
+        <a href="#seccion4">Marcas urbanas</a>
+    </nav>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="imagenes/facebook.jpg"></a>
+        <a href="https://whatsapp.com" target="_blank"><img src="imagenes/whatsap.jpg"></a>
+        <a href="https://instagram.com" target="_blank"><img src="imagenes/stagram.jpg"></a>
+    </div>
+</header>
+
+<div class="carousel">
+    <div class="slides">
+        <div class="slide" style="background-image: url('https://i.pinimg.com/474x/25/1c/f4/251cf462cd37691393e3ae4a73ee5932.jpg');"></div>
+        <div class="slide" style="background-image: url('https://i.pinimg.com/236x/e3/44/c8/e344c81eb4894a3baabcf3226cb216a0.jpg');"></div>
+        <div class="slide" style="background-image: url('https://i.pinimg.com/736x/ed/7c/51/ed7c51f920c4d33ea3015ba49d2c3434.jpg');"></div>
+        <div class="slide" style="background-image: url('https://i.pinimg.com/236x/9a/2a/ed/9a2aed2af004ad2735bf3c744a26b857.jpg');"></div>
+        <div class="slide" style="background-image: url('https://i.pinimg.com/474x/ea/a0/ef/eaa0eff3f673b3f8fa64dd6897cc78bc.jpg');"></div>
+        <div class="slide" style="background-image: url('https://i.pinimg.com/564x/42/c1/a7/42c1a7e17694dbfa246db55da8ac3aed.jpg');"></div>
+    </div>
+</div>
+
+<h1>Ropa y moda urbana</h1>
+
+<section id="seccion1">
+    <div class="contenedor-cuadro-principal">
+        <h2 style="color: #caca67;">Video sobre moda urbana</h2>
+        <div class="contenedor-cuadro">
+            <div class="cuadro">
+                <p>En esta sección te mostramos las últimas tendencias en moda urbana a través de un video que te ayudará a vestirte con estilo.</p>
+            </div>
+            <div class="cuadro">
+                <iframe src="https://www.youtube.com/embed/_pmM-JeDKHw" allowfullscreen></iframe>
+            </div> 
+        </div>
+        <a href="#" class="back-to-menu">Menú principal</a>
+    </div>
+</section>
+
+<section id="seccion2">
+    <div class="contenedor-cuadro-principal">
+        <h2 style="color: #ecde8d;">Página web de moda urbana</h2>
+        <div class="contenedor-cuadro">
+            <div class="cuadro">
+                <iframe src="https://co.pinterest.com/albarracin0640/moda-para-hombre/" allowfullscreen></iframe>
+            </div>
+            <div class="cuadro">
+                <p>En esta sección exploraras la mejor página web con contenido de moda urbana, para mejorar tu estilo.</p>
+            </div>
+        </div>
+        <a href="#" class="back-to-menu">Menú principal</a>
+    </div>
+</section>
+
+<section id="seccion3">
+    <div class="contenedor-cuadro-principal">
+        <h2 style="color: #fffffe;">Calculadora personalizada</h2>
+        <div class="contenedor-cuadro">
+            <div class="cuadro" style="width: 48%;">
+                <iframe src="calculadora_Ruben.html" style="height: 690px; width: 400px; max-width: 100%;" allowfullscreen></iframe>
+                <a href="calculadora_Ruben.html" download class="back-to-menu" style="width: auto;">Descargar calculadora</a>
+            </div>
+            <div class="cuadro">
+                <p>En esta sección podras calcular tu talla de ropa ideal con nuestra calculadora personalizada.</p>
+            </div>
+        </div>
+        <a href="#" class="back-to-menu">Menú principal</a>
+    </div>
+</section>
+
+<section id="seccion4">
+    <div class="contenedor-cuadro-principal">
+        <h2 style="color: #f1f19e;">Marcas urbanas</h2>
+        <div class="contenedor-cuadro">
+            <div class="cuadro">
+                <iframe src="https://docs.google.com/spreadsheets/d/101cZ_QwbM-zFgKgTvG4h9WkLECFI8K868SnN5AYgMlI/edit?usp=sharing"  allowfullscreen></iframe>
+                <a href="https://docs.google.com/spreadsheets/d/101cZ_QwbM-zFgKgTvG4h9WkLECFI8K868SnN5AYgMlI/edit?usp=sharing" target="_blank" class="back-to-menu" style="width: auto;">Abrir Formulario</a>
+            </div>
+            <div class="cuadro">
+                <p>En este formulario podrás ver las difentes marcas urbanas, comenta y danos tus opiniones sobre moda urbana en nuestras redes sociales y ayudarnos a mejorar.</p>
+            </div>
+        </div>
+        <a href="#" class="back-to-menu">Menú principal</a>
+    </div>
+</section>
+
+<footer>
+    <p>Conéctate con nosotros en las redes sociales:</p>
+    <div class="footer-social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="imagenes/facebook.jpg"></a>
+        <a href="https://whatsapp.com" target="_blank"><img src="imagenes/whatsap.jpg"></a>
+        <a href="https://instagram.com" target="_blank"><img src="imagenes/stagram.jpg"></a>
+        <a href="https://tiktok.com" target="_blank"><img src="imagenes/tiktok.jpg"></a>
+        <a href="https://telegram.com" target="_blank"><img src="imagenes/telegram.jpg"></a>
+    </div>
+    <p>&copy; 2024 Ropa y moda urbana. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
